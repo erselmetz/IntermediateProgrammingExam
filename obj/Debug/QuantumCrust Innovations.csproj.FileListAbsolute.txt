@@ -1,0 +1,10 @@
+E:\IP\QuantumCrust Innovations\bin\Debug\QuantumCrust Innovations.exe.config
+E:\IP\QuantumCrust Innovations\bin\Debug\QuantumCrust Innovations.exe
+E:\IP\QuantumCrust Innovations\bin\Debug\QuantumCrust Innovations.pdb
+E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust Innovations.csproj.AssemblyReference.cache
+E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust_Innovations.Form1.resources
+E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust_Innovations.Properties.Resources.resources
+E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust Innovations.csproj.GenerateResource.cache
+E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust Innovations.csproj.CoreCompileInputs.cache
+E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust Innovations.exe
+E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust Innovations.pdb
