@@ -8,3 +8,13 @@ E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust Innovations.csproj.Generat
 E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust Innovations.csproj.CoreCompileInputs.cache
 E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust Innovations.exe
 E:\IP\QuantumCrust Innovations\obj\Debug\QuantumCrust Innovations.pdb
+E:\IntermediateProgrammingExam\bin\Debug\QuantumCrust Innovations.exe.config
+E:\IntermediateProgrammingExam\bin\Debug\QuantumCrust Innovations.exe
+E:\IntermediateProgrammingExam\bin\Debug\QuantumCrust Innovations.pdb
+E:\IntermediateProgrammingExam\obj\Debug\QuantumCrust Innovations.csproj.AssemblyReference.cache
+E:\IntermediateProgrammingExam\obj\Debug\QuantumCrust_Innovations.Form1.resources
+E:\IntermediateProgrammingExam\obj\Debug\QuantumCrust_Innovations.Properties.Resources.resources
+E:\IntermediateProgrammingExam\obj\Debug\QuantumCrust Innovations.csproj.GenerateResource.cache
+E:\IntermediateProgrammingExam\obj\Debug\QuantumCrust Innovations.csproj.CoreCompileInputs.cache
+E:\IntermediateProgrammingExam\obj\Debug\QuantumCrust Innovations.exe
+E:\IntermediateProgrammingExam\obj\Debug\QuantumCrust Innovations.pdb
