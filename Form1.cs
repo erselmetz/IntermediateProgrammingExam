@@ -19,7 +19,6 @@ namespace QuantumCrust_Innovations
         {
             InitializeComponent();
             radioButtonSmall.Checked = true;
-            comboBox1.SelectedIndex = 0;
             listBoxDessert.SelectedIndex = 0;
         }
 
@@ -31,19 +30,19 @@ namespace QuantumCrust_Innovations
 
         private void radioButtonSmall_CheckedChanged(object sender, EventArgs e)
         {
-            updateSize();
+            updatePizzaSize();
             updateComputation();
         }
 
         private void radioButtonMedium_CheckedChanged(object sender, EventArgs e)
         {
-            updateSize();
+            updatePizzaSize();
             updateComputation();
         }
 
         private void radioButtonLarge_CheckedChanged(object sender, EventArgs e)
         {
-            updateSize();
+            updatePizzaSize();
             updateComputation();
         }
 
@@ -136,11 +135,11 @@ namespace QuantumCrust_Innovations
             updateComputation();
         }
 
-        private void updateSize()
+        private void updatePizzaSize()
         {
-            if (radioButtonSmall.Checked) price.setSmall();
-            else if (radioButtonMedium.Checked) price.setMedium();
-            else if (radioButtonLarge.Checked) price.setLarge();
+            if (radioButtonSmall.Checked) price.setPizzaSmall();
+            else if (radioButtonMedium.Checked) price.setPizzaMedium();
+            else if (radioButtonLarge.Checked) price.setPizzaLarge();
             else radioButtonSmall.Checked = true;
         }
         private void updatePizza()
@@ -151,14 +150,23 @@ namespace QuantumCrust_Innovations
             else if (checkBoxInterstellarInferno.Checked) price.initialPizza = price.InterstellarInferno;
             else price.initialPizza = 0;
         }
+
+        private void updateDrinksSize()
+        {
+            if (NanoBiteDrinks.Checked) price.setDrinksSmall();
+            else if (QuantumQuotaDrinks.Checked) price.setDrinksMedium();
+            else if (GalacticFeastDrinks.Checked) price.setDrinksLarge();
+            else comboBox1.SelectedIndex = 0;
+        }
         private void updateDrinks()
         {
+            updateDrinksSize();
             string text = comboBox1.Text;
             if (text == "Galactic Elixirs") price.initialDrinks = price.GalacticElixirs;
             else if (text == "Neon Fusion Fizz") price.initialDrinks = price.NeonFusionFizz;
             else if (text == "Quantum Quencher") price.initialDrinks = price.QuantumQuencher;
             else if (text == "Infinity Infusions") price.initialDrinks = price.InfinityInfusions;
-            else if (text == "Zero - Gravity Brews") price.initialDrinks = price.ZeroGravityBrews;
+            else if (text == "Zero Gravity Brews") price.initialDrinks = price.ZeroGravityBrews;
             else if (text == "Cosmic Mixology Cocktails") price.initialDrinks = price.CosmicMixologyCocktails;
             else if (text == "No Drinks") price.initialDrinks = 0;
         }
@@ -176,12 +184,24 @@ namespace QuantumCrust_Innovations
 
         private void updateComputation()
         {
-            updateSize();
+            updatePizzaSize();
             updatePizza();
+            updateDrinksSize();
             updateDrinks();
             updateDessert();
-            price.initialPrice = price.initialPizza + price.initialDrinks + price.initialDessert;
-            textBoxAmount.Text = Convert.ToString(price.initialPrice);
+
+            price.finalPrice = price.initialPizza + price.initialDrinks + price.initialDessert;
+            textBoxAmount.Text = "P " + Convert.ToString(price.finalPrice);
+
+            if (textBoxPayment.Text != "0")
+            {
+                double payment = Convert.ToDouble(textBoxPayment.Text);
+                double change = payment - price.finalPrice;
+                textBoxChange.Text = Convert.ToString(change);
+
+                if (change < 0) textBoxChange.ForeColor = Color.Red;
+                else if (change > 0) textBoxChange.ForeColor = Color.Green;
+            }
         }
 
         private void clearPizza()
@@ -194,12 +214,44 @@ namespace QuantumCrust_Innovations
 
         private void clearDrinks()
         {
-            comboBox1.SelectedIndex = 0;
+            NanoBiteDrinks.Checked = false;
+            QuantumQuotaDrinks.Checked = false;
+            GalacticFeastDrinks.Checked = false;
         }
 
         private void clearDessert()
         {
             listBoxDessert.SelectedIndex = 0;
+        }
+
+        private void NanoBiteDrinks_CheckedChanged(object sender, EventArgs e)
+        {
+            if (NanoBiteDrinks.Checked == true)
+            {
+                QuantumQuotaDrinks.Checked = false;
+                GalacticFeastDrinks.Checked = false;
+            }
+            updateComputation();
+        }
+
+        private void QuantumQuotaDrinks_CheckedChanged(object sender, EventArgs e)
+        {
+            if (QuantumQuotaDrinks.Checked == true)
+            {
+                NanoBiteDrinks.Checked = false;
+                GalacticFeastDrinks.Checked = false;
+            }
+            updateComputation();
+        }
+
+        private void GalacticFeastDrinks_CheckedChanged(object sender, EventArgs e)
+        {
+            if (GalacticFeastDrinks.Checked == true)
+            {
+                NanoBiteDrinks.Checked = false;
+                QuantumQuotaDrinks.Checked = false;
+            }
+            updateComputation();
         }
     }
 }

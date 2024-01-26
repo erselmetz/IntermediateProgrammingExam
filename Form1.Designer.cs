@@ -49,6 +49,9 @@
             this.textBoxPayment = new System.Windows.Forms.TextBox();
             this.labelComputer = new System.Windows.Forms.Label();
             this.labelClear = new System.Windows.Forms.Label();
+            this.QuantumQuotaDrinks = new System.Windows.Forms.CheckBox();
+            this.NanoBiteDrinks = new System.Windows.Forms.CheckBox();
+            this.GalacticFeastDrinks = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -90,12 +93,12 @@
             // radioButtonSmall
             // 
             this.radioButtonSmall.AutoSize = true;
+            this.radioButtonSmall.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonSmall.Location = new System.Drawing.Point(29, 235);
             this.radioButtonSmall.Name = "radioButtonSmall";
             this.radioButtonSmall.Size = new System.Drawing.Size(162, 24);
             this.radioButtonSmall.TabIndex = 4;
-            this.radioButtonSmall.TabStop = true;
             this.radioButtonSmall.Text = "NanoBite (Small)";
             this.radioButtonSmall.UseVisualStyleBackColor = true;
             this.radioButtonSmall.CheckedChanged += new System.EventHandler(this.radioButtonSmall_CheckedChanged);
@@ -103,12 +106,12 @@
             // radioButtonMedium
             // 
             this.radioButtonMedium.AutoSize = true;
+            this.radioButtonMedium.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonMedium.Location = new System.Drawing.Point(29, 275);
             this.radioButtonMedium.Name = "radioButtonMedium";
             this.radioButtonMedium.Size = new System.Drawing.Size(228, 24);
             this.radioButtonMedium.TabIndex = 5;
-            this.radioButtonMedium.TabStop = true;
             this.radioButtonMedium.Text = "QuantumQuota (Medium)";
             this.radioButtonMedium.UseVisualStyleBackColor = true;
             this.radioButtonMedium.CheckedChanged += new System.EventHandler(this.radioButtonMedium_CheckedChanged);
@@ -116,12 +119,12 @@
             // radioButtonLarge
             // 
             this.radioButtonLarge.AutoSize = true;
+            this.radioButtonLarge.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonLarge.Location = new System.Drawing.Point(29, 315);
             this.radioButtonLarge.Name = "radioButtonLarge";
             this.radioButtonLarge.Size = new System.Drawing.Size(202, 24);
             this.radioButtonLarge.TabIndex = 6;
-            this.radioButtonLarge.TabStop = true;
             this.radioButtonLarge.Text = "GalacticFeast (Large)";
             this.radioButtonLarge.UseVisualStyleBackColor = true;
             this.radioButtonLarge.CheckedChanged += new System.EventHandler(this.radioButtonLarge_CheckedChanged);
@@ -129,6 +132,7 @@
             // checkBoxQuantumVeggieFusion
             // 
             this.checkBoxQuantumVeggieFusion.AutoSize = true;
+            this.checkBoxQuantumVeggieFusion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBoxQuantumVeggieFusion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxQuantumVeggieFusion.Location = new System.Drawing.Point(366, 235);
             this.checkBoxQuantumVeggieFusion.Name = "checkBoxQuantumVeggieFusion";
@@ -141,6 +145,7 @@
             // checkBoxNanoMushromMeltdown
             // 
             this.checkBoxNanoMushromMeltdown.AutoSize = true;
+            this.checkBoxNanoMushromMeltdown.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBoxNanoMushromMeltdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxNanoMushromMeltdown.Location = new System.Drawing.Point(366, 275);
             this.checkBoxNanoMushromMeltdown.Name = "checkBoxNanoMushromMeltdown";
@@ -153,6 +158,7 @@
             // checkBoxRoboBBQBlast
             // 
             this.checkBoxRoboBBQBlast.AutoSize = true;
+            this.checkBoxRoboBBQBlast.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBoxRoboBBQBlast.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxRoboBBQBlast.Location = new System.Drawing.Point(366, 315);
             this.checkBoxRoboBBQBlast.Name = "checkBoxRoboBBQBlast";
@@ -164,6 +170,8 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -172,7 +180,7 @@
             "Neon Fusion Fizz",
             "Quantum Quencher",
             "Infinity Infusions",
-            "Zero-Gravity Brews",
+            "Zero Gravity Brews",
             "Cosmic Mixology Cocktails"});
             this.comboBox1.Location = new System.Drawing.Point(685, 235);
             this.comboBox1.Name = "comboBox1";
@@ -184,7 +192,7 @@
             // 
             this.listBoxDessert.BackColor = System.Drawing.SystemColors.Window;
             this.listBoxDessert.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBoxDessert.Cursor = System.Windows.Forms.Cursors.Default;
+            this.listBoxDessert.Cursor = System.Windows.Forms.Cursors.Hand;
             this.listBoxDessert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxDessert.ForeColor = System.Drawing.SystemColors.WindowText;
             this.listBoxDessert.FormattingEnabled = true;
@@ -205,6 +213,7 @@
             // checkBoxInterstellarInferno
             // 
             this.checkBoxInterstellarInferno.AutoSize = true;
+            this.checkBoxInterstellarInferno.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBoxInterstellarInferno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxInterstellarInferno.Location = new System.Drawing.Point(366, 351);
             this.checkBoxInterstellarInferno.Name = "checkBoxInterstellarInferno";
@@ -246,7 +255,7 @@
             // 
             // textBoxAmount
             // 
-            this.textBoxAmount.Enabled = false;
+            this.textBoxAmount.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAmount.Location = new System.Drawing.Point(1117, 398);
             this.textBoxAmount.Name = "textBoxAmount";
@@ -257,7 +266,7 @@
             // 
             // textBoxChange
             // 
-            this.textBoxChange.Enabled = false;
+            this.textBoxChange.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxChange.Location = new System.Drawing.Point(1117, 511);
             this.textBoxChange.Name = "textBoxChange";
@@ -279,6 +288,7 @@
             // 
             this.labelComputer.AutoSize = true;
             this.labelComputer.BackColor = System.Drawing.Color.Teal;
+            this.labelComputer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelComputer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelComputer.Location = new System.Drawing.Point(1169, 558);
             this.labelComputer.Name = "labelComputer";
@@ -291,19 +301,64 @@
             // 
             this.labelClear.AutoSize = true;
             this.labelClear.BackColor = System.Drawing.Color.Red;
+            this.labelClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelClear.Location = new System.Drawing.Point(1086, 558);
             this.labelClear.Name = "labelClear";
             this.labelClear.Size = new System.Drawing.Size(59, 24);
             this.labelClear.TabIndex = 20;
             this.labelClear.Text = "Clear";
+            this.labelClear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelClear.Click += new System.EventHandler(this.labelClear_Click);
+            // 
+            // QuantumQuotaDrinks
+            // 
+            this.QuantumQuotaDrinks.AutoSize = true;
+            this.QuantumQuotaDrinks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.QuantumQuotaDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuantumQuotaDrinks.Location = new System.Drawing.Point(685, 315);
+            this.QuantumQuotaDrinks.Name = "QuantumQuotaDrinks";
+            this.QuantumQuotaDrinks.Size = new System.Drawing.Size(90, 24);
+            this.QuantumQuotaDrinks.TabIndex = 21;
+            this.QuantumQuotaDrinks.Text = "Medium";
+            this.QuantumQuotaDrinks.UseVisualStyleBackColor = true;
+            this.QuantumQuotaDrinks.CheckedChanged += new System.EventHandler(this.QuantumQuotaDrinks_CheckedChanged);
+            // 
+            // NanoBiteDrinks
+            // 
+            this.NanoBiteDrinks.AutoSize = true;
+            this.NanoBiteDrinks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NanoBiteDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NanoBiteDrinks.Location = new System.Drawing.Point(685, 276);
+            this.NanoBiteDrinks.Name = "NanoBiteDrinks";
+            this.NanoBiteDrinks.Size = new System.Drawing.Size(72, 24);
+            this.NanoBiteDrinks.TabIndex = 22;
+            this.NanoBiteDrinks.Text = "Small";
+            this.NanoBiteDrinks.UseVisualStyleBackColor = true;
+            this.NanoBiteDrinks.CheckedChanged += new System.EventHandler(this.NanoBiteDrinks_CheckedChanged);
+            // 
+            // GalacticFeastDrinks
+            // 
+            this.GalacticFeastDrinks.AutoSize = true;
+            this.GalacticFeastDrinks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GalacticFeastDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GalacticFeastDrinks.Location = new System.Drawing.Point(685, 351);
+            this.GalacticFeastDrinks.Name = "GalacticFeastDrinks";
+            this.GalacticFeastDrinks.Size = new System.Drawing.Size(74, 24);
+            this.GalacticFeastDrinks.TabIndex = 23;
+            this.GalacticFeastDrinks.Text = "Large";
+            this.GalacticFeastDrinks.UseVisualStyleBackColor = true;
+            this.GalacticFeastDrinks.CheckedChanged += new System.EventHandler(this.GalacticFeastDrinks_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1307, 592);
+            this.Controls.Add(this.GalacticFeastDrinks);
+            this.Controls.Add(this.NanoBiteDrinks);
+            this.Controls.Add(this.QuantumQuotaDrinks);
             this.Controls.Add(this.labelClear);
             this.Controls.Add(this.labelComputer);
             this.Controls.Add(this.textBoxPayment);
@@ -325,9 +380,11 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuantumCrust Innovations";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -360,6 +417,9 @@
         private System.Windows.Forms.TextBox textBoxPayment;
         private System.Windows.Forms.Label labelComputer;
         private System.Windows.Forms.Label labelClear;
+        private System.Windows.Forms.CheckBox QuantumQuotaDrinks;
+        private System.Windows.Forms.CheckBox NanoBiteDrinks;
+        private System.Windows.Forms.CheckBox GalacticFeastDrinks;
     }
 }
 
