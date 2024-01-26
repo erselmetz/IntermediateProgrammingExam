@@ -60,17 +60,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -79,6 +80,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cocktail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlacticPudding.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IceCreamSundae.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NanoBitesNebulla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuantumBerryPradoxTart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Veggie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoboBBQBlast.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InterstellarInferno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Small.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Large.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medium.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NeonFusionFizz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZeroGravityBrews.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuantumQuencher.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GalacticElexirs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfinityInfusions.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NanoMushroomMeltdown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
