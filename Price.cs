@@ -27,7 +27,7 @@ namespace QuantumCrust_Innovations
 
         /*Dessert Static*/
         public double NanobiteNutellaNebulaBites = 29.99;
-        public double QuantumBerryParadoxTart = 59.9;
+        public double QuantumBerryParadoxTart = 59.99;
         public double InterdimensionalIceCreamSundae = 39.99;
         public double GalacticPuddingPops = 89.99;
         public double initialDessert = 69.99;
@@ -38,57 +38,57 @@ namespace QuantumCrust_Innovations
         //Pizza Price or size
         public void setPizzaSmall()
         {
-            this.QuantumVeggieFussion = 10;
-            this.NanoMushroomMeltdown = 10;
-            this.RobboBBQBlast = 10;
-            this.InterstellarInferno = 10;
+            this.QuantumVeggieFussion = 79.99;
+            this.NanoMushroomMeltdown = 59.99;
+            this.RobboBBQBlast = 84.99;
+            this.InterstellarInferno = 89.99;
         }
 
         public void setPizzaMedium()
         {
-            this.QuantumVeggieFussion = 20;
-            this.NanoMushroomMeltdown = 20;
-            this.RobboBBQBlast = 20;
-            this.InterstellarInferno = 20;
+            this.QuantumVeggieFussion = 95.99;
+            this.NanoMushroomMeltdown = 71.99;
+            this.RobboBBQBlast = 101.99;
+            this.InterstellarInferno = 107.99;
         }
 
         public void setPizzaLarge()
         {
-            this.QuantumVeggieFussion = 30;
-            this.NanoMushroomMeltdown = 30;
-            this.RobboBBQBlast = 30;
-            this.InterstellarInferno = 30;
+            this.QuantumVeggieFussion = 151.99;
+            this.NanoMushroomMeltdown = 113.99;
+            this.RobboBBQBlast = 161.99;
+            this.InterstellarInferno = 170.99;
         }
 
         //Drinks Price or size
         public void setDrinksSmall()
         {
-            this.GalacticElixirs = 10;
-            this.NeonFusionFizz = 10;
-            this.QuantumQuencher = 10;
-            this.InfinityInfusions = 10;
-            this.ZeroGravityBrews = 10;
-            this.CosmicMixologyCocktails = 10;
+            this.GalacticElixirs = 49;
+            this.NeonFusionFizz = 39;
+            this.QuantumQuencher = 40;
+            this.InfinityInfusions = 40;
+            this.ZeroGravityBrews = 50;
+            this.CosmicMixologyCocktails = 70;
         }
 
         public void setDrinksMedium()
         {
-            this.GalacticElixirs = 20;
-            this.NeonFusionFizz = 20;
-            this.QuantumQuencher = 20;
-            this.InfinityInfusions = 20;
-            this.ZeroGravityBrews = 20;
-            this.CosmicMixologyCocktails = 20;
+            this.GalacticElixirs = 59.8;
+            this.NeonFusionFizz = 46.8;
+            this.QuantumQuencher = 48;
+            this.InfinityInfusions = 48;
+            this.ZeroGravityBrews = 60;
+            this.CosmicMixologyCocktails = 84;
         }
 
         public void setDrinksLarge()
         {
-            this.GalacticElixirs = 30;
-            this.NeonFusionFizz = 30;
-            this.QuantumQuencher = 30;
-            this.InfinityInfusions = 30;
-            this.ZeroGravityBrews = 30;
-            this.CosmicMixologyCocktails = 30;
+            this.GalacticElixirs = 84;
+            this.NeonFusionFizz = 74.1;
+            this.QuantumQuencher = 76;
+            this.InfinityInfusions = 76;
+            this.ZeroGravityBrews = 95;
+            this.CosmicMixologyCocktails = 133;
         }
     }
 }

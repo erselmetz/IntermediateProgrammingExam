@@ -53,6 +53,9 @@
             this.QuantumQuotaDrinks = new System.Windows.Forms.CheckBox();
             this.NanoBiteDrinks = new System.Windows.Forms.CheckBox();
             this.GalacticFeastDrinks = new System.Windows.Forms.CheckBox();
+            this.showPizzaPrice = new System.Windows.Forms.TextBox();
+            this.showDrinksPrice = new System.Windows.Forms.TextBox();
+            this.showDessertPrice = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -289,37 +292,40 @@
             // textBoxAmount
             // 
             this.textBoxAmount.BackColor = System.Drawing.Color.Indigo;
+            this.textBoxAmount.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAmount.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBoxAmount.Location = new System.Drawing.Point(1158, 490);
+            this.textBoxAmount.Location = new System.Drawing.Point(1158, 497);
             this.textBoxAmount.Name = "textBoxAmount";
             this.textBoxAmount.ReadOnly = true;
-            this.textBoxAmount.Size = new System.Drawing.Size(164, 26);
+            this.textBoxAmount.Size = new System.Drawing.Size(164, 19);
             this.textBoxAmount.TabIndex = 16;
-            this.textBoxAmount.Text = "0";
+            this.textBoxAmount.Text = "₱ 0";
             // 
             // textBoxChange
             // 
             this.textBoxChange.BackColor = System.Drawing.Color.Indigo;
+            this.textBoxChange.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxChange.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBoxChange.Location = new System.Drawing.Point(1158, 603);
+            this.textBoxChange.Location = new System.Drawing.Point(1158, 609);
             this.textBoxChange.Name = "textBoxChange";
             this.textBoxChange.ReadOnly = true;
-            this.textBoxChange.Size = new System.Drawing.Size(164, 26);
+            this.textBoxChange.Size = new System.Drawing.Size(164, 19);
             this.textBoxChange.TabIndex = 17;
-            this.textBoxChange.Text = "0";
+            this.textBoxChange.Text = "₱ 0";
             // 
             // textBoxPayment
             // 
             this.textBoxPayment.BackColor = System.Drawing.Color.Indigo;
+            this.textBoxPayment.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPayment.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBoxPayment.Location = new System.Drawing.Point(1158, 543);
+            this.textBoxPayment.Location = new System.Drawing.Point(1158, 549);
             this.textBoxPayment.Name = "textBoxPayment";
-            this.textBoxPayment.Size = new System.Drawing.Size(164, 26);
+            this.textBoxPayment.Size = new System.Drawing.Size(164, 19);
             this.textBoxPayment.TabIndex = 18;
-            this.textBoxPayment.Text = "0";
+            this.textBoxPayment.Text = "₱ 0";
             // 
             // labelComputer
             // 
@@ -394,6 +400,48 @@
             this.GalacticFeastDrinks.UseVisualStyleBackColor = false;
             this.GalacticFeastDrinks.CheckedChanged += new System.EventHandler(this.GalacticFeastDrinks_CheckedChanged);
             // 
+            // showPizzaPrice
+            // 
+            this.showPizzaPrice.BackColor = System.Drawing.Color.Indigo;
+            this.showPizzaPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showPizzaPrice.Enabled = false;
+            this.showPizzaPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showPizzaPrice.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.showPizzaPrice.Location = new System.Drawing.Point(828, 617);
+            this.showPizzaPrice.Name = "showPizzaPrice";
+            this.showPizzaPrice.ReadOnly = true;
+            this.showPizzaPrice.Size = new System.Drawing.Size(164, 19);
+            this.showPizzaPrice.TabIndex = 24;
+            this.showPizzaPrice.Text = "₱ 0";
+            // 
+            // showDrinksPrice
+            // 
+            this.showDrinksPrice.BackColor = System.Drawing.Color.Indigo;
+            this.showDrinksPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showDrinksPrice.Enabled = false;
+            this.showDrinksPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showDrinksPrice.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.showDrinksPrice.Location = new System.Drawing.Point(828, 636);
+            this.showDrinksPrice.Name = "showDrinksPrice";
+            this.showDrinksPrice.ReadOnly = true;
+            this.showDrinksPrice.Size = new System.Drawing.Size(164, 19);
+            this.showDrinksPrice.TabIndex = 25;
+            this.showDrinksPrice.Text = "₱ 0";
+            // 
+            // showDessertPrice
+            // 
+            this.showDessertPrice.BackColor = System.Drawing.Color.Indigo;
+            this.showDessertPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showDessertPrice.Enabled = false;
+            this.showDessertPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showDessertPrice.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.showDessertPrice.Location = new System.Drawing.Point(828, 655);
+            this.showDessertPrice.Name = "showDessertPrice";
+            this.showDessertPrice.ReadOnly = true;
+            this.showDessertPrice.Size = new System.Drawing.Size(164, 19);
+            this.showDessertPrice.TabIndex = 26;
+            this.showDessertPrice.Text = "₱ 0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,6 +450,9 @@
             this.BackgroundImage = global::QuantumCrust_Innovations.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.showDessertPrice);
+            this.Controls.Add(this.showDrinksPrice);
+            this.Controls.Add(this.showPizzaPrice);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.GalacticFeastDrinks);
             this.Controls.Add(this.NanoBiteDrinks);
@@ -467,6 +518,9 @@
         private System.Windows.Forms.CheckBox QuantumQuotaDrinks;
         private System.Windows.Forms.CheckBox NanoBiteDrinks;
         private System.Windows.Forms.CheckBox GalacticFeastDrinks;
+        private System.Windows.Forms.TextBox showPizzaPrice;
+        private System.Windows.Forms.TextBox showDrinksPrice;
+        private System.Windows.Forms.TextBox showDessertPrice;
     }
 }
 

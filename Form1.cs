@@ -61,8 +61,7 @@ namespace QuantumCrust_Innovations
             {
                 checkBoxNanoMushromMeltdown.Enabled = true;checkBoxRoboBBQBlast.Enabled = true;checkBoxInterstellarInferno.Enabled = true;
                 setPizzaDefaultIcon();
-            }
-            updateComputation();
+            }updateComputation();
         }
 
         private void checkBoxNanoMushromMeltdown_CheckedChanged(object sender, EventArgs e)
@@ -93,8 +92,8 @@ namespace QuantumCrust_Innovations
 
         private void labelClear_Click(object sender, EventArgs e)
         {
-            clearPizza();clearDrinks();clearDessert();
-            textBoxAmount.Text = "0";textBoxPayment.Text = "0";textBoxChange.Text = "0";
+            clearPizza();clearDrinks();clearDessert();pictureBox1.Image = Properties.Resources.icon;
+            textBoxAmount.Text = "₱ 0"; textBoxPayment.Text = "₱ 0"; textBoxChange.Text = "₱ 0";textBoxChange.ForeColor = Color.DarkTurquoise;
         }
 
         private void labelComputer_Click(object sender, EventArgs e)
@@ -152,11 +151,15 @@ namespace QuantumCrust_Innovations
         {
             updatePizzaSize();updatePizza();updateDrinksSize();updateDrinks();updateDessert();
             price.finalPrice = price.initialPizza + price.initialDrinks + price.initialDessert;
-            textBoxAmount.Text = "P " + Convert.ToString(price.finalPrice);
-            if (textBoxPayment.Text != "0")
+            textBoxAmount.Text = "₱ " + Convert.ToString(price.finalPrice);
+            showPizzaPrice.Text = "Pizza : ₱ " + Convert.ToString(price.initialPizza);
+            showDrinksPrice.Text = "Drinks ₱ " + Convert.ToString(price.initialDrinks);
+            showDessertPrice.Text = "Dessert : ₱ " + Convert.ToString(price.initialDessert);
+            if (textBoxPayment.Text != "₱ 0")
             {
-                double payment = Convert.ToDouble(textBoxPayment.Text);float change = Convert.ToSingle(payment - price.finalPrice);
-                textBoxChange.Text = Convert.ToString(change);
+                string paymentText = textBoxPayment.Text.Remove(0, 2);
+                double payment = Convert.ToDouble(paymentText); float change = Convert.ToSingle(payment - price.finalPrice);
+                textBoxChange.Text = "₱ " + Convert.ToString(change);
                 if (change < 0) textBoxChange.ForeColor = Color.Red;else if (change > 0) textBoxChange.ForeColor = Color.Green;
             }
         }
