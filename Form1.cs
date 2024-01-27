@@ -38,17 +38,17 @@ namespace QuantumCrust_Innovations
 
         private void radioButtonSmall_CheckedChanged(object sender, EventArgs e)
         {
-            enabledPizza(); updateComputation();
+            disabledPizza(); enabledPizza(); updateComputation();
         }
 
         private void radioButtonMedium_CheckedChanged(object sender, EventArgs e)
         {
-            enabledPizza(); updateComputation();
+            disabledPizza(); enabledPizza(); updateComputation();
         }
 
         private void radioButtonLarge_CheckedChanged(object sender, EventArgs e)
         {
-            enabledPizza(); updateComputation();
+            disabledPizza(); enabledPizza(); updateComputation();
         }
 
         private void checkBoxQuantumVeggieFusion_CheckedChanged(object sender, EventArgs e)
@@ -207,10 +207,10 @@ namespace QuantumCrust_Innovations
         }
         private void disabledPizza()
         {
-            checkBoxQuantumVeggieFusion.Enabled = false;
-            checkBoxNanoMushromMeltdown.Enabled = false;
-            checkBoxRoboBBQBlast.Enabled = false;
-            checkBoxInterstellarInferno.Enabled = false;
+            checkBoxQuantumVeggieFusion.Checked = false; checkBoxQuantumVeggieFusion.Enabled = false;
+            checkBoxNanoMushromMeltdown.Checked = false; checkBoxNanoMushromMeltdown.Enabled = false;
+            checkBoxRoboBBQBlast.Checked = false; checkBoxRoboBBQBlast.Enabled = false;
+            checkBoxInterstellarInferno.Checked = false; checkBoxInterstellarInferno.Enabled = false;
         }
     }
 }
