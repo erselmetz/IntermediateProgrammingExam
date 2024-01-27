@@ -33,9 +33,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.radioButtonSmall = new System.Windows.Forms.RadioButton();
-            this.radioButtonMedium = new System.Windows.Forms.RadioButton();
-            this.radioButtonLarge = new System.Windows.Forms.RadioButton();
             this.checkBoxQuantumVeggieFusion = new System.Windows.Forms.CheckBox();
             this.checkBoxNanoMushromMeltdown = new System.Windows.Forms.CheckBox();
             this.checkBoxRoboBBQBlast = new System.Windows.Forms.CheckBox();
@@ -56,10 +53,22 @@
             this.showPizzaPrice = new System.Windows.Forms.TextBox();
             this.showDrinksPrice = new System.Windows.Forms.TextBox();
             this.showDessertPrice = new System.Windows.Forms.TextBox();
+            this.radioButtonLarge = new System.Windows.Forms.RadioButton();
+            this.radioButtonMedium = new System.Windows.Forms.RadioButton();
+            this.radioButtonSmall = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.RadioButtonNone = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -104,59 +113,15 @@
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
-            // radioButtonSmall
-            // 
-            this.radioButtonSmall.AutoSize = true;
-            this.radioButtonSmall.BackColor = System.Drawing.Color.Indigo;
-            this.radioButtonSmall.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonSmall.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.radioButtonSmall.Location = new System.Drawing.Point(29, 368);
-            this.radioButtonSmall.Name = "radioButtonSmall";
-            this.radioButtonSmall.Size = new System.Drawing.Size(162, 24);
-            this.radioButtonSmall.TabIndex = 4;
-            this.radioButtonSmall.Text = "NanoBite (Small)";
-            this.radioButtonSmall.UseVisualStyleBackColor = false;
-            this.radioButtonSmall.CheckedChanged += new System.EventHandler(this.radioButtonSmall_CheckedChanged);
-            // 
-            // radioButtonMedium
-            // 
-            this.radioButtonMedium.AutoSize = true;
-            this.radioButtonMedium.BackColor = System.Drawing.Color.Indigo;
-            this.radioButtonMedium.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonMedium.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.radioButtonMedium.Location = new System.Drawing.Point(29, 408);
-            this.radioButtonMedium.Name = "radioButtonMedium";
-            this.radioButtonMedium.Size = new System.Drawing.Size(228, 24);
-            this.radioButtonMedium.TabIndex = 5;
-            this.radioButtonMedium.Text = "QuantumQuota (Medium)";
-            this.radioButtonMedium.UseVisualStyleBackColor = false;
-            this.radioButtonMedium.CheckedChanged += new System.EventHandler(this.radioButtonMedium_CheckedChanged);
-            // 
-            // radioButtonLarge
-            // 
-            this.radioButtonLarge.AutoSize = true;
-            this.radioButtonLarge.BackColor = System.Drawing.Color.Indigo;
-            this.radioButtonLarge.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonLarge.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.radioButtonLarge.Location = new System.Drawing.Point(29, 448);
-            this.radioButtonLarge.Name = "radioButtonLarge";
-            this.radioButtonLarge.Size = new System.Drawing.Size(202, 24);
-            this.radioButtonLarge.TabIndex = 6;
-            this.radioButtonLarge.Text = "GalacticFeast (Large)";
-            this.radioButtonLarge.UseVisualStyleBackColor = false;
-            this.radioButtonLarge.CheckedChanged += new System.EventHandler(this.radioButtonLarge_CheckedChanged);
-            // 
             // checkBoxQuantumVeggieFusion
             // 
             this.checkBoxQuantumVeggieFusion.AutoSize = true;
             this.checkBoxQuantumVeggieFusion.BackColor = System.Drawing.Color.Indigo;
             this.checkBoxQuantumVeggieFusion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBoxQuantumVeggieFusion.Enabled = false;
             this.checkBoxQuantumVeggieFusion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxQuantumVeggieFusion.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.checkBoxQuantumVeggieFusion.Location = new System.Drawing.Point(366, 368);
+            this.checkBoxQuantumVeggieFusion.Location = new System.Drawing.Point(6, 19);
             this.checkBoxQuantumVeggieFusion.Name = "checkBoxQuantumVeggieFusion";
             this.checkBoxQuantumVeggieFusion.Size = new System.Drawing.Size(221, 24);
             this.checkBoxQuantumVeggieFusion.TabIndex = 7;
@@ -169,9 +134,10 @@
             this.checkBoxNanoMushromMeltdown.AutoSize = true;
             this.checkBoxNanoMushromMeltdown.BackColor = System.Drawing.Color.Indigo;
             this.checkBoxNanoMushromMeltdown.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBoxNanoMushromMeltdown.Enabled = false;
             this.checkBoxNanoMushromMeltdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxNanoMushromMeltdown.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.checkBoxNanoMushromMeltdown.Location = new System.Drawing.Point(366, 408);
+            this.checkBoxNanoMushromMeltdown.Location = new System.Drawing.Point(6, 41);
             this.checkBoxNanoMushromMeltdown.Name = "checkBoxNanoMushromMeltdown";
             this.checkBoxNanoMushromMeltdown.Size = new System.Drawing.Size(234, 24);
             this.checkBoxNanoMushromMeltdown.TabIndex = 8;
@@ -184,9 +150,10 @@
             this.checkBoxRoboBBQBlast.AutoSize = true;
             this.checkBoxRoboBBQBlast.BackColor = System.Drawing.Color.Indigo;
             this.checkBoxRoboBBQBlast.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBoxRoboBBQBlast.Enabled = false;
             this.checkBoxRoboBBQBlast.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxRoboBBQBlast.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.checkBoxRoboBBQBlast.Location = new System.Drawing.Point(366, 448);
+            this.checkBoxRoboBBQBlast.Location = new System.Drawing.Point(6, 63);
             this.checkBoxRoboBBQBlast.Name = "checkBoxRoboBBQBlast";
             this.checkBoxRoboBBQBlast.Size = new System.Drawing.Size(154, 24);
             this.checkBoxRoboBBQBlast.TabIndex = 9;
@@ -210,9 +177,9 @@
             "Infinity Infusions",
             "Zero Gravity Brews",
             "Cosmic Mixology Cocktails"});
-            this.comboBox1.Location = new System.Drawing.Point(685, 368);
+            this.comboBox1.Location = new System.Drawing.Point(6, 19);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(245, 28);
+            this.comboBox1.Size = new System.Drawing.Size(305, 28);
             this.comboBox1.TabIndex = 10;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -234,7 +201,7 @@
             this.listBoxDessert.Location = new System.Drawing.Point(1000, 368);
             this.listBoxDessert.Name = "listBoxDessert";
             this.listBoxDessert.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.listBoxDessert.Size = new System.Drawing.Size(295, 102);
+            this.listBoxDessert.Size = new System.Drawing.Size(317, 142);
             this.listBoxDessert.TabIndex = 11;
             this.listBoxDessert.SelectedIndexChanged += new System.EventHandler(this.listBoxDessert_SelectedIndexChanged);
             // 
@@ -243,9 +210,10 @@
             this.checkBoxInterstellarInferno.AutoSize = true;
             this.checkBoxInterstellarInferno.BackColor = System.Drawing.Color.Indigo;
             this.checkBoxInterstellarInferno.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBoxInterstellarInferno.Enabled = false;
             this.checkBoxInterstellarInferno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxInterstellarInferno.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.checkBoxInterstellarInferno.Location = new System.Drawing.Point(366, 484);
+            this.checkBoxInterstellarInferno.Location = new System.Drawing.Point(6, 85);
             this.checkBoxInterstellarInferno.Name = "checkBoxInterstellarInferno";
             this.checkBoxInterstellarInferno.Size = new System.Drawing.Size(178, 24);
             this.checkBoxInterstellarInferno.TabIndex = 12;
@@ -259,7 +227,7 @@
             this.labelAmount.BackColor = System.Drawing.Color.Indigo;
             this.labelAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAmount.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.labelAmount.Location = new System.Drawing.Point(1056, 497);
+            this.labelAmount.Location = new System.Drawing.Point(13, 14);
             this.labelAmount.Name = "labelAmount";
             this.labelAmount.Size = new System.Drawing.Size(86, 20);
             this.labelAmount.TabIndex = 13;
@@ -271,7 +239,7 @@
             this.labelChange.BackColor = System.Drawing.Color.Indigo;
             this.labelChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChange.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.labelChange.Location = new System.Drawing.Point(1055, 610);
+            this.labelChange.Location = new System.Drawing.Point(12, 96);
             this.labelChange.Name = "labelChange";
             this.labelChange.Size = new System.Drawing.Size(86, 20);
             this.labelChange.TabIndex = 14;
@@ -283,7 +251,7 @@
             this.labelPayment.BackColor = System.Drawing.Color.Indigo;
             this.labelPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPayment.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.labelPayment.Location = new System.Drawing.Point(1055, 550);
+            this.labelPayment.Location = new System.Drawing.Point(12, 54);
             this.labelPayment.Name = "labelPayment";
             this.labelPayment.Size = new System.Drawing.Size(93, 20);
             this.labelPayment.TabIndex = 15;
@@ -295,7 +263,7 @@
             this.textBoxAmount.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAmount.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBoxAmount.Location = new System.Drawing.Point(1158, 497);
+            this.textBoxAmount.Location = new System.Drawing.Point(115, 14);
             this.textBoxAmount.Name = "textBoxAmount";
             this.textBoxAmount.ReadOnly = true;
             this.textBoxAmount.Size = new System.Drawing.Size(164, 19);
@@ -308,7 +276,7 @@
             this.textBoxChange.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxChange.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBoxChange.Location = new System.Drawing.Point(1158, 609);
+            this.textBoxChange.Location = new System.Drawing.Point(115, 95);
             this.textBoxChange.Name = "textBoxChange";
             this.textBoxChange.ReadOnly = true;
             this.textBoxChange.Size = new System.Drawing.Size(164, 19);
@@ -321,7 +289,7 @@
             this.textBoxPayment.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPayment.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.textBoxPayment.Location = new System.Drawing.Point(1158, 549);
+            this.textBoxPayment.Location = new System.Drawing.Point(115, 53);
             this.textBoxPayment.Name = "textBoxPayment";
             this.textBoxPayment.Size = new System.Drawing.Size(164, 19);
             this.textBoxPayment.TabIndex = 18;
@@ -333,7 +301,7 @@
             this.labelComputer.BackColor = System.Drawing.Color.Teal;
             this.labelComputer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelComputer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelComputer.Location = new System.Drawing.Point(1211, 650);
+            this.labelComputer.Location = new System.Drawing.Point(1206, 647);
             this.labelComputer.Name = "labelComputer";
             this.labelComputer.Size = new System.Drawing.Size(111, 24);
             this.labelComputer.TabIndex = 19;
@@ -347,7 +315,7 @@
             this.labelClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClear.Location = new System.Drawing.Point(1055, 650);
+            this.labelClear.Location = new System.Drawing.Point(1000, 647);
             this.labelClear.Name = "labelClear";
             this.labelClear.Size = new System.Drawing.Size(77, 24);
             this.labelClear.TabIndex = 20;
@@ -362,7 +330,7 @@
             this.QuantumQuotaDrinks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.QuantumQuotaDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QuantumQuotaDrinks.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.QuantumQuotaDrinks.Location = new System.Drawing.Point(685, 448);
+            this.QuantumQuotaDrinks.Location = new System.Drawing.Point(6, 84);
             this.QuantumQuotaDrinks.Name = "QuantumQuotaDrinks";
             this.QuantumQuotaDrinks.Size = new System.Drawing.Size(90, 24);
             this.QuantumQuotaDrinks.TabIndex = 21;
@@ -377,7 +345,7 @@
             this.NanoBiteDrinks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.NanoBiteDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NanoBiteDrinks.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.NanoBiteDrinks.Location = new System.Drawing.Point(685, 409);
+            this.NanoBiteDrinks.Location = new System.Drawing.Point(6, 60);
             this.NanoBiteDrinks.Name = "NanoBiteDrinks";
             this.NanoBiteDrinks.Size = new System.Drawing.Size(72, 24);
             this.NanoBiteDrinks.TabIndex = 22;
@@ -392,7 +360,7 @@
             this.GalacticFeastDrinks.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GalacticFeastDrinks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GalacticFeastDrinks.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.GalacticFeastDrinks.Location = new System.Drawing.Point(685, 484);
+            this.GalacticFeastDrinks.Location = new System.Drawing.Point(6, 108);
             this.GalacticFeastDrinks.Name = "GalacticFeastDrinks";
             this.GalacticFeastDrinks.Size = new System.Drawing.Size(74, 24);
             this.GalacticFeastDrinks.TabIndex = 23;
@@ -407,7 +375,7 @@
             this.showPizzaPrice.Enabled = false;
             this.showPizzaPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showPizzaPrice.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.showPizzaPrice.Location = new System.Drawing.Point(828, 617);
+            this.showPizzaPrice.Location = new System.Drawing.Point(828, 520);
             this.showPizzaPrice.Name = "showPizzaPrice";
             this.showPizzaPrice.ReadOnly = true;
             this.showPizzaPrice.Size = new System.Drawing.Size(164, 19);
@@ -421,7 +389,7 @@
             this.showDrinksPrice.Enabled = false;
             this.showDrinksPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showDrinksPrice.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.showDrinksPrice.Location = new System.Drawing.Point(828, 636);
+            this.showDrinksPrice.Location = new System.Drawing.Point(828, 539);
             this.showDrinksPrice.Name = "showDrinksPrice";
             this.showDrinksPrice.ReadOnly = true;
             this.showDrinksPrice.Size = new System.Drawing.Size(164, 19);
@@ -435,12 +403,128 @@
             this.showDessertPrice.Enabled = false;
             this.showDessertPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showDessertPrice.ForeColor = System.Drawing.Color.DarkTurquoise;
-            this.showDessertPrice.Location = new System.Drawing.Point(828, 655);
+            this.showDessertPrice.Location = new System.Drawing.Point(828, 558);
             this.showDessertPrice.Name = "showDessertPrice";
             this.showDessertPrice.ReadOnly = true;
             this.showDessertPrice.Size = new System.Drawing.Size(164, 19);
             this.showDessertPrice.TabIndex = 26;
             this.showDessertPrice.Text = "₱ 0";
+            // 
+            // radioButtonLarge
+            // 
+            this.radioButtonLarge.AutoSize = true;
+            this.radioButtonLarge.BackColor = System.Drawing.Color.Indigo;
+            this.radioButtonLarge.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonLarge.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.radioButtonLarge.Location = new System.Drawing.Point(6, 79);
+            this.radioButtonLarge.Name = "radioButtonLarge";
+            this.radioButtonLarge.Size = new System.Drawing.Size(202, 24);
+            this.radioButtonLarge.TabIndex = 6;
+            this.radioButtonLarge.Text = "GalacticFeast (Large)";
+            this.radioButtonLarge.UseVisualStyleBackColor = false;
+            this.radioButtonLarge.CheckedChanged += new System.EventHandler(this.radioButtonLarge_CheckedChanged);
+            // 
+            // radioButtonMedium
+            // 
+            this.radioButtonMedium.AutoSize = true;
+            this.radioButtonMedium.BackColor = System.Drawing.Color.Indigo;
+            this.radioButtonMedium.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonMedium.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.radioButtonMedium.Location = new System.Drawing.Point(6, 49);
+            this.radioButtonMedium.Name = "radioButtonMedium";
+            this.radioButtonMedium.Size = new System.Drawing.Size(228, 24);
+            this.radioButtonMedium.TabIndex = 5;
+            this.radioButtonMedium.Text = "QuantumQuota (Medium)";
+            this.radioButtonMedium.UseVisualStyleBackColor = false;
+            this.radioButtonMedium.CheckedChanged += new System.EventHandler(this.radioButtonMedium_CheckedChanged);
+            // 
+            // radioButtonSmall
+            // 
+            this.radioButtonSmall.AutoSize = true;
+            this.radioButtonSmall.BackColor = System.Drawing.Color.Indigo;
+            this.radioButtonSmall.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonSmall.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.radioButtonSmall.Location = new System.Drawing.Point(6, 19);
+            this.radioButtonSmall.Name = "radioButtonSmall";
+            this.radioButtonSmall.Size = new System.Drawing.Size(162, 24);
+            this.radioButtonSmall.TabIndex = 4;
+            this.radioButtonSmall.Text = "NanoBite (Small)";
+            this.radioButtonSmall.UseVisualStyleBackColor = false;
+            this.radioButtonSmall.CheckedChanged += new System.EventHandler(this.radioButtonSmall_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Indigo;
+            this.groupBox1.Controls.Add(this.RadioButtonNone);
+            this.groupBox1.Controls.Add(this.radioButtonSmall);
+            this.groupBox1.Controls.Add(this.radioButtonMedium);
+            this.groupBox1.Controls.Add(this.radioButtonLarge);
+            this.groupBox1.Location = new System.Drawing.Point(29, 368);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(317, 137);
+            this.groupBox1.TabIndex = 27;
+            this.groupBox1.TabStop = false;
+            // 
+            // RadioButtonNone
+            // 
+            this.RadioButtonNone.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.RadioButtonNone.AutoSize = true;
+            this.RadioButtonNone.BackColor = System.Drawing.Color.Indigo;
+            this.RadioButtonNone.Checked = true;
+            this.RadioButtonNone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RadioButtonNone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadioButtonNone.ForeColor = System.Drawing.Color.DarkTurquoise;
+            this.RadioButtonNone.Location = new System.Drawing.Point(6, 0);
+            this.RadioButtonNone.Name = "RadioButtonNone";
+            this.RadioButtonNone.Size = new System.Drawing.Size(14, 13);
+            this.RadioButtonNone.TabIndex = 7;
+            this.RadioButtonNone.TabStop = true;
+            this.RadioButtonNone.UseVisualStyleBackColor = false;
+            this.RadioButtonNone.Visible = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Indigo;
+            this.groupBox2.Controls.Add(this.checkBoxQuantumVeggieFusion);
+            this.groupBox2.Controls.Add(this.checkBoxNanoMushromMeltdown);
+            this.groupBox2.Controls.Add(this.checkBoxRoboBBQBlast);
+            this.groupBox2.Controls.Add(this.checkBoxInterstellarInferno);
+            this.groupBox2.Location = new System.Drawing.Point(352, 368);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(317, 140);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Indigo;
+            this.groupBox3.Controls.Add(this.comboBox1);
+            this.groupBox3.Controls.Add(this.QuantumQuotaDrinks);
+            this.groupBox3.Controls.Add(this.NanoBiteDrinks);
+            this.groupBox3.Controls.Add(this.GalacticFeastDrinks);
+            this.groupBox3.Location = new System.Drawing.Point(675, 368);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(317, 140);
+            this.groupBox3.TabIndex = 28;
+            this.groupBox3.TabStop = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Indigo;
+            this.groupBox4.Controls.Add(this.textBoxPayment);
+            this.groupBox4.Controls.Add(this.labelAmount);
+            this.groupBox4.Controls.Add(this.labelChange);
+            this.groupBox4.Controls.Add(this.labelPayment);
+            this.groupBox4.Controls.Add(this.textBoxAmount);
+            this.groupBox4.Controls.Add(this.textBoxChange);
+            this.groupBox4.Location = new System.Drawing.Point(1000, 510);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(317, 137);
+            this.groupBox4.TabIndex = 29;
+            this.groupBox4.TabStop = false;
             // 
             // Form1
             // 
@@ -450,30 +534,17 @@
             this.BackgroundImage = global::QuantumCrust_Innovations.Properties.Resources.bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.showDessertPrice);
             this.Controls.Add(this.showDrinksPrice);
             this.Controls.Add(this.showPizzaPrice);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.GalacticFeastDrinks);
-            this.Controls.Add(this.NanoBiteDrinks);
-            this.Controls.Add(this.QuantumQuotaDrinks);
             this.Controls.Add(this.labelClear);
             this.Controls.Add(this.labelComputer);
-            this.Controls.Add(this.textBoxPayment);
-            this.Controls.Add(this.textBoxChange);
-            this.Controls.Add(this.textBoxAmount);
-            this.Controls.Add(this.labelPayment);
-            this.Controls.Add(this.labelChange);
-            this.Controls.Add(this.labelAmount);
-            this.Controls.Add(this.checkBoxInterstellarInferno);
             this.Controls.Add(this.listBoxDessert);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.checkBoxRoboBBQBlast);
-            this.Controls.Add(this.checkBoxNanoMushromMeltdown);
-            this.Controls.Add(this.checkBoxQuantumVeggieFusion);
-            this.Controls.Add(this.radioButtonLarge);
-            this.Controls.Add(this.radioButtonMedium);
-            this.Controls.Add(this.radioButtonSmall);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
@@ -487,6 +558,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -498,9 +577,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.RadioButton radioButtonSmall;
-        private System.Windows.Forms.RadioButton radioButtonMedium;
-        private System.Windows.Forms.RadioButton radioButtonLarge;
         private System.Windows.Forms.CheckBox checkBoxQuantumVeggieFusion;
         private System.Windows.Forms.CheckBox checkBoxNanoMushromMeltdown;
         private System.Windows.Forms.CheckBox checkBoxRoboBBQBlast;
@@ -521,6 +597,14 @@
         private System.Windows.Forms.TextBox showPizzaPrice;
         private System.Windows.Forms.TextBox showDrinksPrice;
         private System.Windows.Forms.TextBox showDessertPrice;
+        private System.Windows.Forms.RadioButton radioButtonLarge;
+        private System.Windows.Forms.RadioButton radioButtonMedium;
+        private System.Windows.Forms.RadioButton radioButtonSmall;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.RadioButton RadioButtonNone;
     }
 }
 

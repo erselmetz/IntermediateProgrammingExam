@@ -38,17 +38,17 @@ namespace QuantumCrust_Innovations
 
         private void radioButtonSmall_CheckedChanged(object sender, EventArgs e)
         {
-            updatePizzaSize();updateComputation();
+            enabledPizza(); updateComputation();
         }
 
         private void radioButtonMedium_CheckedChanged(object sender, EventArgs e)
         {
-            updatePizzaSize();updateComputation();
+            enabledPizza(); updateComputation();
         }
 
         private void radioButtonLarge_CheckedChanged(object sender, EventArgs e)
         {
-            updatePizzaSize();updateComputation();
+            enabledPizza(); updateComputation();
         }
 
         private void checkBoxQuantumVeggieFusion_CheckedChanged(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace QuantumCrust_Innovations
 
         private void labelClear_Click(object sender, EventArgs e)
         {
-            clearPizza();clearDrinks();clearDessert();pictureBox1.Image = Properties.Resources.icon;
+            disabledPizza(); clearPizza(); clearDrinks(); clearDessert();pictureBox1.Image = Properties.Resources.icon;price.clear();updateComputation();
             textBoxAmount.Text = "₱ 0"; textBoxPayment.Text = "₱ 0"; textBoxChange.Text = "₱ 0";textBoxChange.ForeColor = Color.DarkTurquoise;
         }
 
@@ -106,7 +106,7 @@ namespace QuantumCrust_Innovations
             if (radioButtonSmall.Checked){pictureBox1.Image = Properties.Resources.Small;price.setPizzaSmall();}
             else if (radioButtonMedium.Checked){pictureBox1.Image = Properties.Resources.Medium;price.setPizzaMedium();}
             else if (radioButtonLarge.Checked){pictureBox1.Image = Properties.Resources.Large;price.setPizzaLarge();}
-            else radioButtonSmall.Checked = true;
+            else { RadioButtonNone.Checked = true; }
         }
         private void updatePizza()
         {
@@ -166,7 +166,7 @@ namespace QuantumCrust_Innovations
 
         private void clearPizza()
         {
-            checkBoxQuantumVeggieFusion.Checked = false;checkBoxNanoMushromMeltdown.Checked = false;checkBoxRoboBBQBlast.Checked = false;checkBoxInterstellarInferno.Checked = false;radioButtonSmall.Checked = true;
+            checkBoxQuantumVeggieFusion.Checked = false;checkBoxNanoMushromMeltdown.Checked = false;checkBoxRoboBBQBlast.Checked = false;checkBoxInterstellarInferno.Checked = false;RadioButtonNone.Checked = true;disabledPizza();
         }
 
         private void clearDrinks()
@@ -197,6 +197,20 @@ namespace QuantumCrust_Innovations
         private void setPizzaDefaultIcon()
         {
             pictureBox2.Image = Properties.Resources.icon;
+        }
+        private void enabledPizza()
+        {
+            checkBoxQuantumVeggieFusion.Enabled = true;
+            checkBoxNanoMushromMeltdown.Enabled = true;
+            checkBoxRoboBBQBlast.Enabled = true;
+            checkBoxInterstellarInferno.Enabled = true;
+        }
+        private void disabledPizza()
+        {
+            checkBoxQuantumVeggieFusion.Enabled = false;
+            checkBoxNanoMushromMeltdown.Enabled = false;
+            checkBoxRoboBBQBlast.Enabled = false;
+            checkBoxInterstellarInferno.Enabled = false;
         }
     }
 }

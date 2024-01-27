@@ -90,5 +90,23 @@ namespace QuantumCrust_Innovations
             this.ZeroGravityBrews = 95;
             this.CosmicMixologyCocktails = 133;
         }
+
+        public void clear()
+        {
+            this.QuantumVeggieFussion = 0;
+            this.NanoMushroomMeltdown = 0;
+            this.RobboBBQBlast = 0;
+            this.InterstellarInferno = 0;
+            this.initialPizza = 0;
+
+            this.GalacticElixirs = 0;
+            this.NeonFusionFizz = 0;
+            this.QuantumQuencher = 0;
+            this.InfinityInfusions = 0;
+            this.ZeroGravityBrews = 0;
+            this.CosmicMixologyCocktails = 0;
+            this.initialDrinks = 0;
+
+        }
     }
 }
